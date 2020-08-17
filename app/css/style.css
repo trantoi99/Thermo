@@ -22,6 +22,14 @@ body {
   letter-spacing: -0.64px;
   color: #000000; }
 
+.fs64 {
+  font-size: 64px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: -1.28px; }
+
 .fontSize-16 {
   font-family: 'DM Sans';
   font-size: 1rem;
@@ -39,6 +47,15 @@ body {
   font-stretch: normal;
   letter-spacing: normal;
   font-family: 'DM Sans'; }
+
+.fontSize-24 {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  color: #000000; }
 
 .fontSize-18 {
   font-size: 1.125rem;
@@ -60,7 +77,10 @@ body {
   min-height: 784px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url("img/img.png"); }
+  background-image: url("img/img.png");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center; }
 
 nav {
   padding-left: 13.5% !important;
@@ -78,7 +98,7 @@ nav {
     letter-spacing: normal; }
   nav .active,
   nav a:hover {
-    text-decoration: underline;
+    text-decoration: none;
     background-color: none; }
   nav .nav-item {
     padding-right: 60px; }
@@ -129,11 +149,6 @@ section {
     font-weight: bold; }
   .section_min .col--left {
     padding-left: 10%; }
-  .section_min .col--center {
-    text-align: center; }
-  .section_min .text--left {
-    padding-left: 5%;
-    padding-top: 2%; }
 
 .btn-danger {
   width: 16rem;
@@ -210,6 +225,10 @@ section {
 .section_Banner {
   background-size: cover;
   background-image: url("img/banner.png");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
   text-align: center; }
   .section_Banner .section_Banner--text {
     font-size: 2.5rem;
@@ -225,7 +244,8 @@ section a {
   color: #535fb3; }
 
 section a:hover {
-  color: #1a756d; }
+  color: #1a756d;
+  text-decoration: none; }
 
 .section_doctor {
   padding-bottom: 0px;
@@ -310,7 +330,11 @@ section a:hover {
   min-height: 447px;
   height: 50vh;
   background-size: cover;
-  background-image: url("img/ImgChild.png"); }
+  background-image: url("img/ImgChild.png");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat; }
   .section_Banner--Middle .section_Banner--Middle--text {
     font-size: 48px;
     font-weight: bold;
@@ -353,7 +377,11 @@ section a:hover {
 
 .section_banner--last {
   background-size: cover;
-  background-image: url("img/ImgLast.png"); }
+  background-image: url("img/ImgLast.png");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat; }
   .section_banner--last .text {
     font-size: 48px;
     font-weight: bold;
@@ -380,5 +408,63 @@ footer .btnSocial {
 footer .fa:hover {
   opacity: 0.7; }
 
-.customer {
+.customerTestimonials {
   background: #f3f4fa; }
+  .customerTestimonials .fontSize-16 {
+    color: #000000;
+    line-height: 1.5;
+    letter-spacing: 1px; }
+  .customerTestimonials .row {
+    border-bottom: 1px solid #f3f4fa; }
+  .customerTestimonials img {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: 24px; }
+  .customerTestimonials .fs20 {
+    font-style: italic;
+    line-height: 1.5;
+    letter-spacing: normal;
+    padding: 24px; }
+  .customerTestimonials .fs64 {
+    color: #ff675d; }
+  .customerTestimonials .fontSize-18 {
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 24px; }
+  .customerTestimonials .testimonials {
+    width: 360px;
+    height: auto;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.06);
+    border: solid 1px #f1f1f1;
+    background-color: #ffffff; }
+  .customerTestimonials .testimonials::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .customerTestimonials .testimonials img {
+    float: left;
+    border-radius: 50%; }
+  .customerTestimonials .testimonials span {
+    font-size: 20px; }
+  @media (max-width: 500px) {
+    .customerTestimonials .testimonials {
+      text-align: center; }
+    .customerTestimonials .testimonials {
+      margin: auto;
+      float: none;
+      display: block; } }
+
+.answerQuestion {
+  background-image: url("img/ImgQuestion.svg");
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .answerQuestion .fontSize-16 {
+    color: #000000;
+    transition: all 0.5s ease-in-out 0s; }
+  .answerQuestion span {
+    color: #ff675d;
+    -webkit-text-stroke: 1px #ff675d; }
