@@ -1,6 +1,9 @@
 html {
   scroll-behavior: smooth; }
 
+.checked {
+  color: #ffd768; }
+
 body {
   margin: 0;
   font-size: 16px;
@@ -44,6 +47,13 @@ body {
   line-height: normal;
   letter-spacing: normal;
   font-family: 'DM Sans'; }
+
+.fs20 {
+  font-size: 20px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal; }
 
 .masthead {
   height: 70vh;
@@ -286,9 +296,6 @@ section a:hover {
     padding-top: 2%; }
   .section_watch .pl {
     padding-left: 5rem; }
-  .section_watch .border-text {
-    padding-left: 32%;
-    padding-right: 32%; }
   .section_watch .text--box-1 {
     padding-left: 4%;
     padding-right: 12%; }
@@ -322,21 +329,11 @@ section a:hover {
   padding-left: 38%; }
 
 .reviewMachine .fs20--red {
-  font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #ff675d; }
 
 .reviewMachine .fs20--black {
-  font-size: 20px;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
   color: #000000; }
 
 .reviewMachine .fontSize-16 {
@@ -382,3 +379,6 @@ footer .btnSocial {
 
 footer .fa:hover {
   opacity: 0.7; }
+
+.customer {
+  background: #f3f4fa; }

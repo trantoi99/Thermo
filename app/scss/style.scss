@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.checked {
+    color: #ffd768;
+}
+
 body {
     margin: 0;
     font-size: 16px;
@@ -49,6 +53,14 @@ body {
     line-height: normal;
     letter-spacing: normal;
     font-family: 'DM Sans';
+}
+
+.fs20 {
+    font-size: 20px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
 }
 
 .masthead {
@@ -344,10 +356,6 @@ section {
     .pl {
         padding-left: 5rem;
     }
-    .border-text {
-        padding-left: 32%;
-        padding-right: 32%;
-    }
     .text--box-1 {
         padding-left: 4%;
         padding-right: 12%;
@@ -389,21 +397,11 @@ section {
         padding-left: 38%;
     }
     .fs20--red {
-        font-size: 20px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
         color: #ff675d;
     }
     .fs20--black {
-        font-size: 20px;
         font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: normal;
-        letter-spacing: normal;
         color: #000000;
     }
     .fontSize-16 {
@@ -463,4 +461,8 @@ footer {
     .fa:hover {
         opacity: 0.7;
     }
+}
+
+.customer {
+    background: #f3f4fa;
 }
