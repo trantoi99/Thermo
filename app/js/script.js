@@ -17,18 +17,6 @@ $(document).on("click", function() {
     });
 });
 
-function progress(timeleft, timetotal, $element) {
-    var progressBarWidth = timeleft * $element.width() / timetotal;
-    $element.find('div').animate({ width: progressBarWidth }, 500).html(Math.floor(timeleft / 60) + ":" + timeleft % 60);
-    if (timeleft > 0) {
-        setTimeout(function() {
-            progress(timeleft - 1, timetotal, $element);
-        }, 1000);
-    }
-};
-
-progress(600, 600, $('#progressBar'));
-
 $(document).ready(function() {
     $('.slider').slick({
         dots: true,
@@ -63,10 +51,34 @@ $(document).ready(function() {
                     slidesToScroll: 1
                 }
             }
-            // You can unslick at a given breakpoint now by adding:
-            // settings: "unslick"
-            // instead of a settings object
         ]
     });
 
 });
+const second = 1000,
+    minute = second * 60,
+    hour = minute * 60;
+
+
+
+let countDown = new Date('August 30, 2020 00:00:00').getTime(),
+    x = setInterval(function() {
+        let now = new Date().getTime(),
+            distance = countDown - now;
+
+        document.getElementById('hours').innerText = Math.floor(distance / (hour)),
+            document.getElementById('minutes').innerText = Math.floor((distance % (hour)) / (minute)),
+            document.getElementById('seconds').innerText = Math.floor((distance % (minute)) / second);
+
+    }, second);
+
+openImg("Group941");
+
+function openImg(imgName) {
+    var i, x;
+    x = document.getElementsByClassName("picture");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    document.getElementById(imgName).style.display = "block";
+}

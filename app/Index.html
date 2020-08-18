@@ -662,7 +662,44 @@
         <div class="container">
             <div class="d-flex">
                 <div class="col-md-6">
-                    <img src="css/img/ImgProduct.png" alt="product" class="img-fluid">
+                    <div class="row pt-4">
+                        <div class="col-12">
+                            <div id="Group941" class="picture" style="display:none">
+                                <img class="img-fluid" src="css/img/Group941.png" alt="Group941">
+                            </div>
+                            <div id="Rectangle777" class="picture" style="display:none">
+                                <img class="img-fluid" src="css/img/Rectangle777.png" alt="Rectangle777">
+                            </div>
+                            <div id="Rectangle778" class="picture" style="display:none">
+                                <img class="img-fluid" src="css/img/Rectangle778.png" alt="Rectangle778">
+                            </div>
+                            <div id="Rectangle779" class="picture" style="display:none">
+                                <img class="img-fluid" src="css/img/Rectangle779.png" alt="Rectangle779">
+                            </div>
+                        </div>
+                        <div class="row pt-0 pb-4 no-gutters">
+                            <div class="col">
+                                <a href="javascript:void(0)" class="myhover" onclick="openImg('Group941');">
+                                    <img class="img-fluid" src="css/img/Group941.png" alt="Group941">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="javascript:void(0)" class="myhover" onclick="openImg('Rectangle777');">
+                                    <img class="img-fluid" src="css/img/Rectangle777.png" alt="Rectangle777">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="javascript:void(0)" class="myhover" onclick="openImg('Rectangle778');">
+                                    <img class="img-fluid" src="css/img/Rectangle778.png" alt="Rectangle778">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <a href="javascript:void(0)" class="myhover" onclick="openImg('Rectangle779');">
+                                    <img class="img-fluid" src="css/img/Rectangle779.png" alt="Rectangle779">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col-md-6">
                     <div class="fontSize-24 py-4">
@@ -689,11 +726,26 @@
                         </div>
                     </div>
                     <div>
-                        <span>🔥</span>
+                        <div class="d-flex justify-content-center">
+                            <span class="px-1">🔥</span>
+                            <div class="fontSize-16--bold px-1">
+                                HURRY UP!
+                            </div>
+                            <div class="fontSize-16--normal px-1">
+                                This Sale will end after
+                            </div>
+                        </div>
                         <div class="progress">
                             <div id="progressBar">
                                 <div class="bar"></div>
                             </div>
+                        </div>
+                        <div class="fontSize-24--red">
+                            <ul>
+                                <li><span id="hours"></span></li>
+                                <li><span id="minutes"></span></li>
+                                <li><span id="seconds"></span></li>
+                            </ul>
                         </div>
                     </div>
                 </div>

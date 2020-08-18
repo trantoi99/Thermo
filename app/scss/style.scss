@@ -603,12 +603,35 @@
         }
         
         .detailProduct {
+            img {
+                width: 100%;
+                height: auto;
+            }
+            .Imgcontainer {
+                position: relative;
+                display: none;
+            }
+            .border_image img {
+                width: 7%;
+                height: auto;
+            }
+            .myhover:hover {
+                opacity: 0.6;
+            }
+            .myhover:active {
+                border-radius: 8px;
+                border: solid 1px #000000;
+                background-color: #ffffff;
+            }
             .fontSize-24 {
                 font-weight: bold;
             }
             .fontSize-24--silver {
                 letter-spacing: -0.48px;
                 color: #aaaaaa;
+            }
+            .fontSize-24--red {
+                color: #ff675d;
             }
             .fontSize-32 {
                 font-weight: bold;
@@ -625,5 +648,31 @@
                 line-height: 1.5;
                 letter-spacing: normal;
                 color: #f3746b;
+            }
+            .fontSize-16--bold {
+                font-weight: bold;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: 2px;
+                color: #000000;
+            }
+            .fontSize-16--normal {
+                font-weight: normal;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.5;
+                letter-spacing: normal;
+                color: #666666;
+            }
+            li {
+                display: inline-block;
+                list-style-type: none;
+                padding: 0.25rem;
+                text-transform: uppercase;
+            }
+            li span {
+                display: block;
+                font-size: 1.5rem;
             }
         }

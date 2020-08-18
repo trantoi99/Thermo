@@ -494,12 +494,35 @@ footer .fa:hover {
     color: #ff675d;
     -webkit-text-stroke: 1px #ff675d; }
 
+.detailProduct img {
+  width: 100%;
+  height: auto; }
+
+.detailProduct .Imgcontainer {
+  position: relative;
+  display: none; }
+
+.detailProduct .border_image img {
+  width: 7%;
+  height: auto; }
+
+.detailProduct .myhover:hover {
+  opacity: 0.6; }
+
+.detailProduct .myhover:active {
+  border-radius: 8px;
+  border: solid 1px #000000;
+  background-color: #ffffff; }
+
 .detailProduct .fontSize-24 {
   font-weight: bold; }
 
 .detailProduct .fontSize-24--silver {
   letter-spacing: -0.48px;
   color: #aaaaaa; }
+
+.detailProduct .fontSize-24--red {
+  color: #ff675d; }
 
 .detailProduct .fontSize-32 {
   font-weight: bold;
@@ -516,3 +539,29 @@ footer .fa:hover {
   line-height: 1.5;
   letter-spacing: normal;
   color: #f3746b; }
+
+.detailProduct .fontSize-16--bold {
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  color: #000000; }
+
+.detailProduct .fontSize-16--normal {
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #666666; }
+
+.detailProduct li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 0.25rem;
+  text-transform: uppercase; }
+
+.detailProduct li span {
+  display: block;
+  font-size: 1.5rem; }
