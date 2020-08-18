@@ -1,28 +1,4 @@
 $(document).on("click", function() {
-    $('.slider').slick({
-        centerMode: true,
-        centerPadding: '60px',
-        slidesToShow: 3,
-        responsive: [{
-                breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 3
-                }
-            },
-            {
-                breakpoint: 480,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 1
-                }
-            }
-        ]
-    });
     $('#btn-1').click(function() {
         $('#text-16--1').toggle();
         $("i", this).toggleClass("las la-plus las la-minus");
@@ -39,4 +15,58 @@ $(document).on("click", function() {
         $('#text-16--4').toggle();
         $("i", this).toggleClass("las la-plus las la-minus");
     });
+});
+
+function progress(timeleft, timetotal, $element) {
+    var progressBarWidth = timeleft * $element.width() / timetotal;
+    $element.find('div').animate({ width: progressBarWidth }, 500).html(Math.floor(timeleft / 60) + ":" + timeleft % 60);
+    if (timeleft > 0) {
+        setTimeout(function() {
+            progress(timeleft - 1, timetotal, $element);
+        }, 1000);
+    }
+};
+
+progress(600, 600, $('#progressBar'));
+
+$(document).ready(function() {
+    $('.slider').slick({
+        dots: true,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: false,
+        arrows: true,
+        prevArrow: $('.prev'),
+        nextArrow: $('.next'),
+        responsive: [{
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: true
+                }
+            },
+            {
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1
+                }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+        ]
+    });
+
 });
